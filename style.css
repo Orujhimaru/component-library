@@ -3,25 +3,19 @@
   animation-name: example;
   animation-duration: 0.45s;
   animation-fill-mode: forwards;
-  forced-color-adjust: auto;
-  fill: #ffffff;
-  transition: all;
+  fill: #ff8d8d;
+}
+
+.heart:active {
+  animation-play-state: running;
 }
 
 svg {
   forced-color-adjust: auto;
 }
 
-.heart-svg {
-  fill: #000000;
-  display: block;
-}
-
 .color-red {
-  transform-origin: center center;
   transform: scale(1);
-
-  forced-color-adjust: auto;
 }
 
 #heart {
@@ -44,8 +38,4 @@ svg {
     transform: scale(1);
     fill: rgb(255, 48, 64);
   }
-}
-
-.heart:active {
-  animation-play-state: running;
 }
