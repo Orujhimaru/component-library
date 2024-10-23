@@ -1,0 +1,51 @@
+.heart-svg-animation {
+  forced-color-adjust: auto;
+  animation-name: example;
+  animation-duration: 0.45s;
+  animation-fill-mode: forwards;
+  forced-color-adjust: auto;
+  fill: #ffffff;
+  transition: all;
+}
+
+svg {
+  forced-color-adjust: auto;
+}
+
+.heart-svg {
+  fill: #000000;
+  display: block;
+}
+
+.color-red {
+  transform-origin: center center;
+  transform: scale(1);
+
+  forced-color-adjust: auto;
+}
+
+#heart {
+  overflow: visible;
+  border: none;
+  background-color: transparent;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    fill: rgb(255, 48, 64);
+  }
+}
+
+.heart:active {
+  animation-play-state: running;
+}
