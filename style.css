@@ -59,14 +59,15 @@ body {
 }
 
 .button-sub {
-  padding: 6px 10px;
+  padding: 8px 10px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   border: none;
   border-radius: 8px;
-  gap: 4px;
+  gap: 8px;
 }
 
 @keyframes example2 {
@@ -74,6 +75,7 @@ body {
     background-color: #ffffff;
   }
   1% {
+    color: white;
     background-color: #f677ac;
   }
   25% {
@@ -84,7 +86,7 @@ body {
     background-color: #e31758;
   }
   75% {
-    background-color: #89052f;
+    background-color: #ed004b;
   }
   100% {
     color: white;
@@ -148,3 +150,4 @@ body {
     rotate: 0;
   }
 }
+/* YOUTUBE BTN DONE */
