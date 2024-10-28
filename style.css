@@ -35,7 +35,116 @@ svg {
     transform: scale(0.95);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1, 1);
     fill: rgb(255, 48, 64);
+  }
+}
+/* yOUTUBE sUBSCRIBE btn */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-content: flex-start;
+  row-gap: 40px;
+}
+
+.bg-black {
+  background-color: #2a2a2a;
+  width: fit-content;
+  padding: 40px;
+}
+
+.button-sub {
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+@keyframes example2 {
+  0% {
+    background-color: #ffffff;
+  }
+  1% {
+    background-color: #f677ac;
+  }
+  25% {
+    color: white;
+    background-color: #d71139;
+  }
+  50% {
+    background-color: #e31758;
+  }
+  75% {
+    background-color: #89052f;
+  }
+  100% {
+    color: white;
+    background-color: #3e3e3e;
+  }
+}
+
+.button-sub.active {
+  animation-play-state: running;
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.sub-text {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.bell,
+.dropdown {
+  max-width: 100%;
+  display: none;
+}
+
+.bell.active,
+.dropdown.active {
+  fill: white;
+  display: block;
+}
+
+.bell.active {
+  animation: example3 1s ease-in-out 1 forwards;
+}
+
+.dropdown {
+  width: 12px;
+}
+
+@keyframes example3 {
+  0% {
+    rotate: 20deg;
+  }
+  25% {
+    rotate: -20deg;
+  }
+  50% {
+    rotate: 30deg;
+  }
+  75% {
+    rotate: -30deg;
+  }
+  85% {
+    rotate: 10deg;
+  }
+  90% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0;
   }
 }

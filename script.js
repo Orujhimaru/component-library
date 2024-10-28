@@ -18,3 +18,18 @@ heartBtn.addEventListener("click", () => {
   heart.classList.toggle("heart-svg-animation");
   heart.classList.toggle("color-red");
 });
+
+// YOUTUBE
+
+const subBtn = document.getElementById("button-sub");
+const subText = document.getElementById("sub-text");
+const svgs = document.getElementsByClassName("svgg");
+subBtn.addEventListener("click", () => {
+  svgs[0].classList.toggle("active");
+  svgs[1].classList.toggle("active");
+  subBtn.classList.toggle("active");
+
+  subText.innerText = subBtn.classList.contains("active")
+    ? "Abone olundu"
+    : "Abone ol";
+});
